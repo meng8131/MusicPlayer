@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.ArtistActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/home_title_1"
+            android:id="@+id/title_song"
+            style="@style/homeTitle"/>
+        <TextView
+            android:text="@string/home_title_2"
+            android:id="@+id/title_artist"
+            style="@style/homeTitle"
+            android:textColor="#FF1744"/>
+        <TextView
+            android:text="@string/home_title_3"
+            android:id="@+id/title_album"
+            style="@style/homeTitle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+        <TextView
+            android:text="Closer"
+            android:id="@+id/album_song_1"
+            style="@style/songsList"/>
+        <TextView
+            android:text="Something for Everybody"
+            android:id="@+id/album_song_2"
+            style="@style/songsList"/>
+    </LinearLayout>
+    <TextView
+        android:text="Go To Player"
+        android:id="@+id/player_link_main"
+        style="@style/goToPlayer"/>
+</LinearLayout>
